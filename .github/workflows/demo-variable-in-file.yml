@@ -13,4 +13,6 @@ jobs:
       - name: Przyklad zmiennych
         env:
           NAME: "Tobisof"    # zmienna tylko dla tego kroku
-        run: echo "$GREETING $NAME! ostatnio korzystasz z $CLOUD."
+        run: |
+            echo "$GREETING $NAME! ostatnio korzystasz z $CLOUD." 
+            echo "Pokazanie naszej zmiennej ${{ vars.COURSE_NAME }}"
