@@ -2,7 +2,7 @@ name: Przyklad Zmiennych Workflow
 on: workflow_dispatch  # ręczne uruchomienie dla testów
 
 env:
-  CLOUD: Google Cloud  # zmienna globalna (workflow scope)
+  CLOUD: Azure  # zmienna globalna
 
 jobs:
   build:
@@ -12,5 +12,5 @@ jobs:
     steps:
       - name: Przyklad zmiennych
         env:
-          NAME: "Mona"    # zmienna tylko dla tego kroku
-        run: echo "$GREETING $NAME! Korzystamy z $CLOUD."
+          NAME: "Tobisof"    # zmienna tylko dla tego kroku
+        run: echo "$GREETING $NAME! ostatnio korzystasz z $CLOUD."
