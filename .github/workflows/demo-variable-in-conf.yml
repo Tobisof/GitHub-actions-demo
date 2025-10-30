@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Wypisz zmienną konfiguracyjną
-        run: echo "Projekt ID: ${{ vars.PROJECT_ID }}"
+        run: echo "Nazwa kursu : ${{ vars.COURSE_NAME }}"
