@@ -1,0 +1,9 @@
+name: Przyklad Zmiennych Konfiguracyjnych  
+on: workflow_dispatch
+
+jobs:
+  show-config-vars:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wypisz zmienną konfiguracyjną
+        run: echo "Projekt ID: ${{ vars.PROJECT_ID }}"

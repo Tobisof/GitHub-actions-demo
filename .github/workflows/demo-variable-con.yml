@@ -1,0 +1,12 @@
+name: Przyklad Kontekstow  
+on: workflow_dispatch
+
+jobs:
+  show-context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wypisz informacje kontekstowe
+        run: |
+          echo "Repozytorium: ${{ github.repository }}"
+          echo "Workflow: ${{ github.workflow }}"
+          echo "Uruchomił: ${{ github.actor }}"
